@@ -3,6 +3,11 @@ html{
     font-family: "Roboto", sans-serif;
 }
 
+.my_main_page_layout{
+    margin-left: 12.5rem;
+    margin-top: 0rem;
+}
+
 
 
 
@@ -26,11 +31,18 @@ html{
 
 
 
+/* + Jumbotron rules ----------------------------------- */
 
+.Jumbotron{
+    background-color: rgb(32, 113, 233);
+    color: white;
+}
 
+.spaceinsidejumbo{
+    padding: 1rem;
+}
 
-
-
+/* + Jumbotron rules ---------------FINE---------------- */
 
 
 
@@ -60,7 +72,7 @@ html{
     text-align: center;
 }
 .content {
-    margin-left: 200px; /* Larghezza della sidebar */
+    margin-left: 200px;
     padding: 20px;
 }
 
@@ -71,6 +83,7 @@ html{
 .priority_medium{
     z-index: 1;
 }
+
 /* # Side bar rules ----------------------------------------------END---------------------------- */
 
 
