@@ -117,3 +117,32 @@ html{
 .my_gap_small{
     gap: 1rem;
 }
+
+
+
+
+
+
+
+/* -h tabella ------------------------------------ */
+.table-title {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    border: 1px grey solid;
+
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+  }
+
+  .actions-column {
+    width: 10rem;
+  }
+
+  .my_border{
+    border: 1px grey solid;
+
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+  }
+  /* -h tabella -----------FINE-------------------- */
