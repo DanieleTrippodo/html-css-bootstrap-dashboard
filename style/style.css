@@ -1,0 +1,85 @@
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* # Navbar top----------------------------------------------------------------------------------------------------------- */
+.my_nav_logo{
+    width: 12rem;
+    padding: .5rem;
+}
+
+
+.priority_max{
+    z-index: 2;
+}
+
+
+.my_searchbar{
+    background-color: #d1d1d1;
+    color: black;
+}
+/* # Navbar top----------------------------------------------------------FINE--------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* # Side bar rules ---------------------------------------------------------------------------- */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e1d2c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem; 
+    background-image: url(../img/sidebar-bg.png);
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    padding: 10px 0;
+    text-align: center;
+}
+.content {
+    margin-left: 200px; /* Larghezza della sidebar */
+    padding: 20px;
+}
+
+.my_navbarfont{
+    font-size: 24px;
+}
+
+.priority_medium{
+    z-index: 1;
+}
+/* # Side bar rules ----------------------------------------------END---------------------------- */
+
+
+.my_line{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.my_gap_small{
+    gap: 1rem;
+}

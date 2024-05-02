@@ -16,6 +16,10 @@
 
     <!-- Fontawesome CDN (import icon pack) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Link my style.css file -->
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 
@@ -29,6 +33,17 @@
     <!-- -header ------------------------------------------ -->
     <header>
 
+        <!-- # Navbar superiore con search bar -->
+        <nav class="navbar bg-body-tertiary priority_max">
+            <div class="container-fluid">
+              <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo">
+
+              <form class="d-flex flex-grow-1 mx-3" role="search">  
+                <input class="form-control me-2 my_searchbar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+              </form>
+            </div>
+        </nav>
+
     </header>
     <!-- -header -------FINE------------------------------- -->
 
@@ -37,6 +52,35 @@
 
     <!-- -main -------------------------------------------- -->
     <main>
+
+        <!-- # Aside bar (barra laterale sinistra) -->
+        <section class="my_navbarfont priority_medium">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+            <ul>
+                <li class="my_line my_gap_small ">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+
+                <li class="my_line my_gap_small">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p>Stat</p>
+                </li>
+
+                <li class="my_line my_gap_small">
+                    <i class="fa-solid fa-signal"></i>
+                    <p>Signals</p>
+                </li>
+            </ul>
+            </aside>
+
+        
+            <!-- Content -->
+            <div class="content">
+            <!-- Il tuo contenuto qui -->
+            </div>
+        </section>
 
     </main>
     <!-- -main ----------------FINE------------------------ -->
