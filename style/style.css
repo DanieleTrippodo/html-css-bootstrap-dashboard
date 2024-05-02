@@ -5,7 +5,7 @@ html{
 
 .my_main_page_layout{
     margin-left: 12.5rem;
-    margin-top: 0rem;
+    margin-top: 4rem;
 }
 
 
@@ -13,22 +13,46 @@ html{
 .my_tag {
     width: 8rem;
     font-size: 1rem;
-    filter: opacity(0.9);
-    background-color: rgb(3, 3, 105);
+    background-color: rgb(21 21 119 / 50%);
 }
 
 
 .my_tag_small{
-    width: 4rem;
-    font-size: 0.9rem;
-    filter: opacity(0.9);
-    background-color: rgb(3, 3, 105);
+    width: auto;
+    font-size: 0.7rem;
+    background-color: rgb(21 21 119 / 50%);
 }
 
 
+.my_title_box_todo{
+    color: black;
+    border: grey 1px solid;
+
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.my_todo_box{
+    border: 1px grey solid;
+    padding: 0.5rem;
+}
 
 
+.my_faq_title{
+    border: 1px gray solid;
+    background-color: #f2f2f2;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
 
+    margin: 0;
+    padding: 1rem;
+}
+
+.my_frame_box{
+    border: 1px grey solid;
+
+    border-top: none;
+}
 
 
 
@@ -91,6 +115,7 @@ html{
 .sidebar li {
     padding: 10px 0;
     text-align: center;
+    cursor: pointer;
 }
 .content {
     margin-left: 200px;
@@ -118,7 +143,11 @@ html{
     gap: 1rem;
 }
 
-
+.my_button_plus{
+    background-color: none;
+    border: white 1px solid;
+    color: white;
+}
 
 
 

@@ -34,7 +34,7 @@
     <header>
 
         <!-- # Navbar superiore con search bar -->
-        <nav class="navbar bg-body-tertiary priority_max">
+        <nav class="navbar bg-body-tertiary priority_max fixed-top">
             <div class="container-fluid">
               <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo">
 
@@ -80,28 +80,52 @@
 
         <section class="my_main_page_layout">   <!-- ! Inserire tutto il contenuto del body qui dentro -->
         
-
-
-
-
             <!-- # Jumbotron -->
             <section class="Jumbotron spaceinsidejumbo">
 
 
-                <!-- + titolo con un tag -->
-                <h1>Boolean <span class="badge rounded-pill text-bg my_tag">Piano Blaze</span> </h1>
+                <!-- #Contenuti dentro Jumbotron -->
+                <section class="d-flex justify-content-between"> <!-- elementi dentro Jumbotron -->
+
+                    <div class="row"> <!-- !elemento che imposta le 12 righe nella sezione -->
 
 
-                <!-- + altri tag sotto il titolo -->
-                <span class="badge rounded-pill text-bg my_tag_small">3 app</span>
+                        <!-- + Titolo più tag -->
+                        <div class="col-7">
+                            <h1>Boolean <span class="badge rounded-pill text-bg my_tag">Piano Blaze</span> </h1>
+                          <span class="badge rounded-pill text-bg my_tag_small">3 app</span>
+                          <i class="fa-solid fa-forward"></i>
+                          <span class="badge rounded-pill text-bg my_tag_small">Boolean mobile app</span>
+                          <span class="badge rounded-pill text-bg my_tag_small">Boolean web app</span>
+                          <span class="badge rounded-pill text-bg my_tag_small">Boolean blog app</span>
+                        </div>
+
+
+                        <!-- + Ultimi alunni online -->
+                        <div class="col-4">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <h2>125</h2>
+                        </div>
+
+
+                        <!-- + Nuovo studente più bottone -->
+                        <div class="col-2">
+                            <p>Nuovo Studente</p>
+                            <button class="my_button_plus">+</button>
+                        </div>
+
+                    </div>
+
+                </section>
+
 
             </section> <!-- ! chiusura section Jumbotron -->
 
 
 
 
-
-            <!-- #tabella PRIME CLASSI -->
+            <!-- todo da aggiornare o da rifare completamente... -->
+            <!-- #tabella PRIME CLASSI --> 
             <section class="container mt-5">
                 <h2 class="table-title">Prossime Classi</h2>
                 <table class="table my_border">
@@ -126,6 +150,49 @@
                         <button type="button" class="btn btn-danger d-inline-block">Canc</button>
                       </td>
                     </tr>
+
+
+
+
+                    <tbody class="my_border">
+                        <tr>
+                          <td>Classe 75</td>
+                          <td>15 Feb</td>
+                          <td><span class="badge my_tag_small">Done</span></td>
+                          <td>Attivo</td>
+                          <td>
+                            <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                            <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                          </td>
+                        </tr>
+
+
+
+                        <tbody class="my_border">
+                            <tr>
+                              <td>Classe 75</td>
+                              <td>15 Feb</td>
+                              <td><span class="badge my_tag_small">Done</span></td>
+                              <td>Attivo</td>
+                              <td>
+                                <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                              </td>
+                            </tr>
+
+
+
+                            <tbody class="my_border">
+                                <tr>
+                                  <td>Classe 75</td>
+                                  <td>15 Feb</td>
+                                  <td><span class="badge my_tag_small">Done</span></td>
+                                  <td>Attivo</td>
+                                  <td>
+                                    <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                    <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                                  </td>
+                                </tr>
                     <!-- todo aggiungere altre righe -->
 
 
@@ -136,9 +203,57 @@
 
 
 
+            <!-- todo da aggiornare e sistemare -->
+            <!-- # Todo Box -->
+            <section class="container mt-5">
+                <h1 class="my_title_box_todo" style="background-color: #f2f2f2;">Todo</h1>
+
+                <div class="my_todo_box">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                      </ul>
+                </div>
+            </section>
 
 
-
+            <!-- # FAQ section box -->
+            <section class="container mt-5">
+                <h2 class="my_faq_title">F.A.Q.</h2> <!-- + titolo della sezione -->
+                <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Posso usare questa Dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
 
 
 
