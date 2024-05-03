@@ -33,23 +33,22 @@
     <!-- -header ------------------------------------------ -->
     <header>
 
-        <!-- # Navbar superiore con search bar -->
+        <!-- # Navbar superiore con search bar -->  
         <nav class="navbar bg-body-tertiary priority_max fixed-top">
-            <div class="container-fluid">
-              <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo">
+          <div class="container-fluid">
+            <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo">
 
-              <form class="d-flex flex-grow-1 mx-3" role="search">  
-                <input class="form-control me-2 my_searchbar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                <i class="fa-solid fa-list my_icon"></i> <!-- hamburger menù icon -->
-                <i class="fa-solid fa-circle-question my_icon"></i> <!-- about icon -->
-                <i class="fa-solid fa-ellipsis-vertical my_icon"></i> <!-- ellips vertical icon -->
-                <i class="fa-solid fa-bell my_icon my_color_orange"></i> <!-- campanella icon -->
-                
-              </form>
-            </div>
+            <form class="d-flex flex-grow-1 mx-3" role="search">  
+              <input class="form-control me-2 my_searchbar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+              <i class="fas fa-list my_icon"></i> <!-- hamburger menù icon -->
+              <i class="fas fa-question-circle my_icon"></i> <!-- about icon -->
+              <i class="fas fa-ellipsis-v my_icon"></i> <!-- ellips vertical icon -->
+              <i class="fas fa-bell my_icon my_color_orange"></i> <!-- campanella icon -->
+            </form>
+          </div>
         </nav>
 
-    </header>
+    </header> <!-- + Controllato -->
     <!-- -header -------FINE------------------------------- -->
 
 
@@ -61,50 +60,51 @@
         <!-- # Aside bar (barra laterale sinistra) -->
         <section class="my_navbarfont priority_medium">
             <!-- Sidebar -->
-            <aside class="sidebar">
-            <ul>
-                <li class="my_line my_gap_small ">
-                    <i class="fa-solid fa-house"></i>
-                    <p>Home</p>
-                </li>
-
-                <li class="my_line my_gap_small">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <p>Stat</p>
-                </li>
-
-                <li class="my_line my_gap_small">
-                    <i class="fa-solid fa-signal"></i>
-                    <p>Signals</p>
-                </li>
-            </ul>
-            </aside>
+            <aside class="my_navbarfont priority_medium">
+              <div class="sidebar">
+                  <ul>
+                      <li class="my_line my_gap_small">
+                          <i class="fas fa-home"></i>
+                          <p>Home</p>
+                      </li>
+                      <li class="my_line my_gap_small">
+                          <i class="fas fa-chart-line"></i>
+                          <p>Stat</p>
+                      </li>
+                      <li class="my_line my_gap_small">
+                          <i class="fas fa-signal"></i>
+                          <p>Signals</p>
+                      </li>
+                  </ul>
+              </div>
+          </aside>
         </section>
+        <!-- + Controllato -->
 
         
 
         <section class="my_main_page_layout">   <!-- ! Inserire tutto il contenuto del body qui dentro -->
         
+
             <!-- # Jumbotron -->
             <section class="Jumbotron spaceinsidejumbo">
+              <div class="row">
 
-                <!-- + Contenuti dentro Jumbotron -->
-                <section class="d-flex justify-content-between"> <!-- elementi dentro Jumbotron -->
+                  <!-- + Contenuti dentro Jumbotron -->
+                  <section class="d-flex justify-content-between"> <!-- elementi dentro Jumbotron -->
 
                     <div class="row"> <!-- !elemento che imposta le 12 righe nella sezione -->
-
-
-                        <!-- + Titolo più tag -->
-                        <div class="col-12">
-                            <h1>Boolean <span class="badge rounded-pill text-bg my_tag">Piano Blaze</span> </h1>
-                          <span class="badge rounded-pill text-bg my_tag_small">3 app</span>
-                          <i class="fa-solid fa-forward"></i>
-                          <span class="badge rounded-pill text-bg my_tag_small">Boolean mobile app</span>
-                          <span class="badge rounded-pill text-bg my_tag_small">Boolean web app</span>
-                          <span class="badge rounded-pill text-bg my_tag_small">Boolean blog app</span>
-                        </div>
-
+                      <div class="col-12">
+                        <h1>Boolean <span class="badge rounded-pill text-bg my_tag">Piano Blaze</span></h1>
+                        <span class="badge rounded-pill text-bg my_tag_small">3 app</span>
+                        <i class="fas fa-forward"></i>
+                        <span class="badge rounded-pill text-bg my_tag_small">Boolean mobile app</span>
+                        <span class="badge rounded-pill text-bg my_tag_small">Boolean web app</span>
+                        <span class="badge rounded-pill text-bg my_tag_small">Boolean blog app</span>
+                      </div>
                     </div>
+
+                    
                     
                     <!-- + Ultimi alunni online -->
                     <div class="col-4">
@@ -124,114 +124,97 @@
                         </div>
                     </div>
                     
-                </section>
+                  </section>
+
+              </div> <!-- chiusura row -->
 
             </section> <!-- ! chiusura section Jumbotron -->
-
-
-
-
-            <!-- Rimuovere tutti gli elementi e riposizionarli e ridimensionarli come nel layout fornito... -->
-            <!-- rimuovere la classe container a tutti i select e ridimensionare gli elementi con col-X per posizionarli -->
+            
             
 
 
             <div class="my_flex"> <!-- * disposizione elementi con flex -->
 
-              <!-- todo da aggiornare o da rifare completamente... -->
               <!-- #tabella PRIME CLASSI --> 
-              <section class="m-4 col-8">
-                <h2 class="table-title">Prossime Classi</h2>
-                <table class="table my_frame_box">
-                  <thead>
-                    <tr>
-                      <th scope="col">Nomi</th>
-                      <th scope="col">Data di inizio</th>
-                      <th scope="col">ROI</th>
-                      <th scope="col">Stato</th>
-                      <th scope="col" class="actions-column">Azioni</th>
-                    </tr>
-                  </thead>
-
-                  <tbody class="my_border">
-                    <tr>
-                      <td>Classe 75</td>
-                      <td>15 Feb</td>
-                      <td><span class="badge my_tag_small">Done</span></td>
-                      <td>Attivo</td>
-                      <td>
-                        <button type="button" class="btn btn-primary d-inline-block">Edit</button>
-                        <button type="button" class="btn btn-danger d-inline-block">Canc</button>
-                      </td>
-                    </tr>
-
-
-
-
-                    <tbody class="my_border">
-                        <tr>
-                          <td>Classe 75</td>
-                          <td>15 Feb</td>
-                          <td><span class="badge my_tag_small">Done</span></td>
-                          <td>Attivo</td>
-                          <td>
-                            <button type="button" class="btn btn-primary d-inline-block">Edit</button>
-                            <button type="button" class="btn btn-danger d-inline-block">Canc</button>
-                          </td>
-                        </tr>
-
-
-
-                        <tbody class="my_border">
-                            <tr>
-                              <td>Classe 75</td>
-                              <td>15 Feb</td>
-                              <td><span class="badge my_tag_small">Done</span></td>
-                              <td>Attivo</td>
-                              <td>
-                                <button type="button" class="btn btn-primary d-inline-block">Edit</button>
-                                <button type="button" class="btn btn-danger d-inline-block">Canc</button>
-                              </td>
-                            </tr>
-
-
-
-                            <tbody class="my_border">
-                                <tr>
+              <div class="row">
+                  <section class="m-4 col-8">
+                      <h2 class="table-title">Prossime Classi</h2>
+                      <table class="table my_frame_box">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Nomi</th>
+                                  <th scope="col">Data di inizio</th>
+                                  <th scope="col">ROI</th>
+                                  <th scope="col">Stato</th>
+                                  <th scope="col" class="actions-column">Azioni</th>
+                              </tr>
+                          </thead>
+                          <tbody class="my_border">
+                              <tr>
                                   <td>Classe 75</td>
                                   <td>15 Feb</td>
                                   <td><span class="badge my_tag_small">Done</span></td>
                                   <td>Attivo</td>
                                   <td>
-                                    <button type="button" class="btn btn-primary d-inline-block">Edit</button>
-                                    <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                                      <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                      <button type="button" class="btn btn-danger d-inline-block">Canc</button>
                                   </td>
-                                </tr>
-                    <!-- todo aggiungere altre righe -->
-
-
-                      
-                    </tbody>
-                  </table>
-              </section>
+                              </tr>
+                              <tr>
+                                  <td>Classe 75</td>
+                                  <td>15 Feb</td>
+                                  <td><span class="badge my_tag_small">Done</span></td>
+                                  <td>Attivo</td>
+                                  <td>
+                                      <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                      <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>Classe 75</td>
+                                  <td>15 Feb</td>
+                                  <td><span class="badge my_tag_small">Done</span></td>
+                                  <td>Attivo</td>
+                                  <td>
+                                      <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                      <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>Classe 75</td>
+                                  <td>15 Feb</td>
+                                  <td><span class="badge my_tag_small">Done</span></td>
+                                  <td>Attivo</td>
+                                  <td>
+                                      <button type="button" class="btn btn-primary d-inline-block">Edit</button>
+                                      <button type="button" class="btn btn-danger d-inline-block">Canc</button>
+                                  </td>
+                              </tr>
+                              <!-- todo aggiungere altre righe -->
+                          </tbody>
+                      </table>
+                  </section>
+              </div>
 
               
+              
               <!-- # Todo Box -->
-              <section class="m-4 col-3 flex-grow-1">
-                  <h1 class="my_faq_title" style="background-color: #f2f2f2;">Todo</h1>
+              <div class="row">
+                <section class="m-4 col-3 flex-grow-1">
+                <h1 class="my_faq_title">Todo</h1>
+                <div class="my_frame_box p-2">
 
-                  <div class="my_frame_box p-2">
-                      <ul class="list-group">
-                          <li class="list-group-item">Kickoff nuove classi</li>
-                          <li class="list-group-item">Lezione su Bootstrap 5 in classe #75</li>
-                          <li class="list-group-item">Controllare usarname github studenti</li>
-                        </ul>
+                  <ul class="list-group">
+                    <li class="list-group-item">Kickoff nuove classi</li>
+                    <li class="list-group-item">Lezione su Bootstrap 5 in classe #75</li>
+                    <li class="list-group-item">Controllare usarname github studenti</li>
+                  </ul>
+
                   </div>
-              </section>
-
+                </section>
+              </div>
+              
             </div> <!-- * disposizione elementi con flex -->
-
-
 
 
 
@@ -242,52 +225,55 @@
 
         
               <!-- # FAQ section box -->
-              <section class="m-4 col-8">
-                <h2 class="my_faq_title">F.A.Q.</h2> <!-- + titolo della sezione -->
+              <div class="row">
+                <section section class="m-4 col-8">
+                <h2 class="my_faq_title">F.A.Q.</h2>
                 <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Come aggiungere un nuovo studente?
                       </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Come posso accedere alle informazioni del mio account?
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Posso usare questa Dashboard da mobile?
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Come posso accedere alle informazioni del mio account?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Posso usare questa Dashboard da mobile?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                         </div>
                       </div>
                     </div>
-              </section>
-
-
+                </section>
+              </div>    
+                                    
+                  
               <!-- todo probabilmente da rifare -->
               <!-- # Grafico utenti attivi -->
-              <section class="m-4 col-3 my_box">
-    
-                <!-- + Card con foto e descrizione -->
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <img src="./img/stats.jpeg" class="img-thumbnail" alt="Immagine" style="width: 50%;">
+              <div class="row">
+                <section class="m-4 col-3 my_box">
+                    
+                    <!-- + Card con foto e descrizione -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="./img/stats.jpeg" class="img-thumbnail" alt="Immagine" style="width: 50%;">
                     </div>
                   </div>
                   <div class="row">
@@ -298,8 +284,8 @@
                   </div>
                 </div>
                 
-              </section> 
-              
+                </section> 
+              </div>
               
             </div> <!-- * disposizione elementi con flex -->
             
