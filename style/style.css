@@ -64,6 +64,12 @@ html{
 
 
 
+.my_flex{
+    display: flex;
+}
+
+
+
 /* -m ALL CLASS COLOR ------------------ */
 .my_color_orange{
     color: orange;

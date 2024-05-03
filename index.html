@@ -134,9 +134,13 @@
             <!-- Rimuovere tutti gli elementi e riposizionarli e ridimensionarli come nel layout fornito... -->
             <!-- rimuovere la classe container a tutti i select e ridimensionare gli elementi con col-X per posizionarli -->
             
-            <!-- todo da aggiornare o da rifare completamente... -->
-            <!-- #tabella PRIME CLASSI --> 
-            <section class="container mt-5">
+
+
+            <div class="my_flex"> <!-- * disposizione elementi con flex -->
+
+              <!-- todo da aggiornare o da rifare completamente... -->
+              <!-- #tabella PRIME CLASSI --> 
+              <section class="m-4 col-8">
                 <h2 class="table-title">Prossime Classi</h2>
                 <table class="table my_frame_box">
                   <thead>
@@ -206,94 +210,110 @@
                     <!-- todo aggiungere altre righe -->
 
 
-                    
-                  </tbody>
-                </table>
-            </section>
+                      
+                    </tbody>
+                  </table>
+              </section>
 
-            <!-- # FAQ section box -->
-            <section class="container mt-5">
+              
+              <!-- # Todo Box -->
+              <section class="m-4 col-3 flex-grow-1">
+                  <h1 class="my_faq_title" style="background-color: #f2f2f2;">Todo</h1>
+
+                  <div class="my_frame_box p-2">
+                      <ul class="list-group">
+                          <li class="list-group-item">Kickoff nuove classi</li>
+                          <li class="list-group-item">Lezione su Bootstrap 5 in classe #75</li>
+                          <li class="list-group-item">Controllare usarname github studenti</li>
+                        </ul>
+                  </div>
+              </section>
+
+            </div> <!-- * disposizione elementi con flex -->
+
+
+
+
+
+
+
+
+            <div class="my_flex"> <!-- * disposizione elementi con flex -->
+
+        
+              <!-- # FAQ section box -->
+              <section class="m-4 col-8">
                 <h2 class="my_faq_title">F.A.Q.</h2> <!-- + titolo della sezione -->
                 <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Come aggiungere un nuovo studente?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Come aggiungere un nuovo studente?
+                      </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Posso usare questa Dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Come posso accedere alle informazioni del mio account?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Posso usare questa Dashboard da mobile?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                      </div>
-                    </div>
-                  </div>
-            </section>
+              </section>
 
-            
-            <!-- todo da aggiornare e sistemare non è abbastanza uguale a quello fornito dalle foto -->
-            <!-- # Todo Box -->
-            <section class="container mt-5">
-                <h1 class="my_faq_title" style="background-color: #f2f2f2;">Todo</h1>
 
-                <div class="my_frame_box">
-                    <ul class="list-group">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                </div>
-            </section>
-            
-            
-            <!-- # Grafico utenti attivi -->
-            <section class="container p-2 mt-5 my_box">
-
+              <!-- todo probabilmente da rifare -->
+              <!-- # Grafico utenti attivi -->
+              <section class="m-4 col-3 my_box">
+    
                 <!-- + Card con foto e descrizione -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                          <img src="./img/stats.jpeg" class="img-thumbnail" alt="Immagine" style="width: 50%;">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <h2>Utenti attivi</h2>
-                          <h3>Lista degli utenti attivi in piattaforma nell'ultimo mese</h3>
-                        </div>
-                      </div>
+                  <div class="row">
+                    <div class="col">
+                      <img src="./img/stats.jpeg" class="img-thumbnail" alt="Immagine" style="width: 50%;">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h2>Utenti attivi</h2>
+                      <h3>Lista degli utenti attivi in piattaforma nell'ultimo mese</h3>
+                    </div>
+                  </div>
                 </div>
                 
-            </section> 
-
-
-
+              </section> 
+              
+              
+            </div> <!-- * disposizione elementi con flex -->
+            
+            
+            
+            
           </section>  <!-- ! Section di chiusura di "my main page layout" -->
       </main>
+      
 
 
 
-
-    <!-- -main ----------------FINE------------------------ -->
-
+      <!-- -main ----------------FINE------------------------ -->
+      
 
 
 
