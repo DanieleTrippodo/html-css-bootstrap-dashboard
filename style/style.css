@@ -23,6 +23,31 @@ html{
     background-color: rgb(21 21 119 / 50%);
 }
 
+.my_tagreen{
+    background-color: rgb(30, 129, 0);
+    color: white;
+}
+
+
+.my_tagyellow{
+    background-color: rgb(192, 192, 0);
+    color: white;
+}
+
+.my_tagred{
+    background-color: rgb(116, 26, 4);
+    color: white;
+}
+
+
+/* questa regola da applicare a tutti i tag che inseriamo */
+
+.classeimg{
+    border-radius: 100rem;
+    margin-right: 0.5rem;
+    width: 1.4rem;
+    display: inline-block;
+}
 
 .my_title_box_todo{
     color: black;
@@ -68,6 +93,25 @@ html{
     display: flex;
 }
 
+
+
+
+/* + SIZE BOX-------------------- */
+
+.my_primary_size{
+    margin-bottom: .2rem;
+    width: 60vw;
+    height: auto;
+}
+
+
+.my_secondary_size{
+    margin-bottom: 1rem;
+    width: 25vw;
+    height: auto;
+}
+
+/* + SIZE BOX ENDING------------- */
 
 
 /* -m ALL CLASS COLOR ------------------ */
@@ -213,3 +257,30 @@ html{
     border-bottom-right-radius: 10px;
   }
   /* -h tabella -----------FINE-------------------- */
+
+
+
+
+
+
+
+
+
+
+                                                                                                          /* Layout for other type of platform */
+
+
+  /* Media query per tablet (da 768px a 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+
+
+
+
+
+/* Media query per smartphone (fino a 767px) */
+@media (max-width: 767px) {
+    
+}
