@@ -64,6 +64,15 @@ html{
 
 
 
+/* -m ALL CLASS COLOR ------------------ */
+.my_color_orange{
+    color: orange;
+}
+
+
+/* -m ALL CLASS COLOR -------FINE------- */
+
+
 /* # Navbar top----------------------------------------------------------------------------------------------------------- */
 .my_nav_logo{
     width: 12rem;
@@ -136,6 +145,15 @@ html{
 
 .priority_medium{
     z-index: 1;
+}
+
+.my_icon{   /* per gli elementi a sinistra della navbar */
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    cursor: pointer;
+
+    font-size: 1.3rem;
 }
 
 /* # Side bar rules ----------------------------------------------END---------------------------- */
