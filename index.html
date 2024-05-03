@@ -83,15 +83,14 @@
             <!-- # Jumbotron -->
             <section class="Jumbotron spaceinsidejumbo">
 
-
-                <!-- #Contenuti dentro Jumbotron -->
+                <!-- + Contenuti dentro Jumbotron -->
                 <section class="d-flex justify-content-between"> <!-- elementi dentro Jumbotron -->
 
                     <div class="row"> <!-- !elemento che imposta le 12 righe nella sezione -->
 
 
                         <!-- + Titolo più tag -->
-                        <div class="col-7">
+                        <div class="col-12">
                             <h1>Boolean <span class="badge rounded-pill text-bg my_tag">Piano Blaze</span> </h1>
                           <span class="badge rounded-pill text-bg my_tag_small">3 app</span>
                           <i class="fa-solid fa-forward"></i>
@@ -100,30 +99,36 @@
                           <span class="badge rounded-pill text-bg my_tag_small">Boolean blog app</span>
                         </div>
 
-
-                        <!-- + Ultimi alunni online -->
-                        <div class="col-4">
-                            <p>Studenti online negli ultimi 30 minuti</p>
-                            <h2>125</h2>
-                        </div>
-
-
-                        <!-- + Nuovo studente più bottone -->
-                        <div class="col-2">
-                            <p>Nuovo Studente</p>
-                            <button class="my_button_plus">+</button>
-                        </div>
-
+                    </div>
+                    
+                    <!-- + Ultimi alunni online -->
+                    <div class="col-4">
+                        <p>Studenti online negli ultimi 30 minuti</p>
+                        <h2>125</h2>
                     </div>
 
-                </section>
 
+
+                    <!-- + Nuovo studente più bottone -->
+                    <div class="row my_align_items">
+                        <div class="col-7">
+                            <p>Nuovo Studente</p>
+                        </div>
+                        <div class="col-2">
+                            <button class="btn my_button_plus">+</button>
+                        </div>
+                    </div>
+                    
+                </section>
 
             </section> <!-- ! chiusura section Jumbotron -->
 
 
 
 
+            <!-- Rimuovere tutti gli elementi e riposizionarli e ridimensionarli come nel layout fornito... -->
+            <!-- rimuovere la classe container a tutti i select e ridimensionare gli elementi con col-X per posizionarli -->
+            
             <!-- todo da aggiornare o da rifare completamente... -->
             <!-- #tabella PRIME CLASSI --> 
             <section class="container mt-5">
@@ -201,23 +206,6 @@
                 </table>
             </section>
 
-
-
-            <!-- todo da aggiornare e sistemare non è abbastanza uguale a quello fornito dalle foto -->
-            <!-- # Todo Box -->
-            <section class="container mt-5">
-                <h1 class="my_faq_title" style="background-color: #f2f2f2;">Todo</h1>
-
-                <div class="my_frame_box">
-                    <ul class="list-group">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                </div>
-            </section>
-
-
             <!-- # FAQ section box -->
             <section class="container mt-5">
                 <h2 class="my_faq_title">F.A.Q.</h2> <!-- + titolo della sezione -->
@@ -255,7 +243,22 @@
                   </div>
             </section>
 
+            
+            <!-- todo da aggiornare e sistemare non è abbastanza uguale a quello fornito dalle foto -->
+            <!-- # Todo Box -->
+            <section class="container mt-5">
+                <h1 class="my_faq_title" style="background-color: #f2f2f2;">Todo</h1>
 
+                <div class="my_frame_box">
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                      </ul>
+                </div>
+            </section>
+            
+            
             <!-- # Grafico utenti attivi -->
             <section class="container p-2 mt-5 my_box">
 
@@ -273,13 +276,17 @@
                         </div>
                       </div>
                 </div>
-
+                
             </section> 
 
 
 
-        </section>  <!-- ! Section di chiusura di "my main page layout" -->
-    </main>
+          </section>  <!-- ! Section di chiusura di "my main page layout" -->
+      </main>
+
+
+
+
     <!-- -main ----------------FINE------------------------ -->
 
 

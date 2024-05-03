@@ -155,8 +155,13 @@ html{
     background-color: none;
     border: white 1px solid;
     color: white;
+
+    font-size: 15px;
 }
 
+.my_align_items{
+    align-items: center;
+}
 
 
 
