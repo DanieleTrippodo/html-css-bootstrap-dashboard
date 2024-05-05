@@ -36,15 +36,16 @@
         <!-- # Navbar superiore con search bar -->  
         <nav class="navbar bg-body-tertiary priority_max fixed-top">
           <div class="container-fluid">
-            <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo">
+              <img src="./img/logo.svg" alt="Navbarlogo" class="my_nav_logo big_logo_nav">
+              <img src="./img/mobile-logo.png" alt="Navbarlogomobile" class="my_nav_logo small_logo_nav">
 
-            <form class="d-flex flex-grow-1 mx-3" role="search">  
-              <input class="form-control me-2 my_searchbar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-              <i class="fas fa-list my_icon"></i> <!-- hamburger menù icon -->
-              <i class="fas fa-question-circle my_icon"></i> <!-- about icon -->
-              <i class="fas fa-ellipsis-v my_icon"></i> <!-- ellips vertical icon -->
-              <i class="fas fa-bell my_icon my_color_orange"></i> <!-- campanella icon -->
-            </form>
+              <form class="d-flex flex-grow-1 mx-3" role="search">
+                  <input class="form-control me-2 my_searchbar" type="search" placeholder="&#x1F50E; Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                  <i class="fas fa-list my_icon hide_status"></i> <!-- hamburger menù icon -->
+                  <i class="fas fa-question-circle my_icon hide_status"></i> <!-- about icon -->
+                  <i class="fas fa-ellipsis-v my_icon hide_status"></i> <!-- ellips vertical icon -->
+                  <i class="fas fa-bell my_icon my_color_orange"></i> <!-- campanella icon -->
+              </form>
           </div>
         </nav>
 
@@ -58,10 +59,12 @@
     <main>
 
         <!-- # Aside bar (barra laterale sinistra) -->
-        <section class="my_navbarfont priority_medium">
+        <section class="my_navbarfont priority_medium" id="Adide_Section">
             <!-- Sidebar -->
             <aside class="my_navbarfont priority_medium">
               <div class="sidebar">
+
+
                   <ul>
                       <li class="my_line my_gap_small">
                           <i class="fas fa-home"></i>
@@ -76,6 +79,8 @@
                           <p>Signals</p>
                       </li>
                   </ul>
+
+
               </div>
           </aside>
         </section>
@@ -87,7 +92,7 @@
         
 
             <!-- # Jumbotron -->
-            <section class="Jumbotron spaceinsidejumbo">
+            <section class="Jumbotron spaceinsidejumbo" id="Jumbo_Section">
               <div class="row">
 
                   <!-- + Contenuti dentro Jumbotron -->
@@ -136,7 +141,7 @@
             <div class="my_flex"> <!-- * disposizione elementi con flex -->
 
               <!-- #tabella PRIME CLASSI --> 
-              <div class="row">
+              <div class="row" id="Tabella_PrimeClassi">
                   <section class="m-4 col my_primary_size">
                       <h2 class="table-title">Prossime Classi</h2>
                       <table class="table my_frame_box">
@@ -250,15 +255,24 @@
               
               
               <!-- # Todo Box -->
-              <div class="row">
+              <div class="row" id="Todo_Section">
                 <section class="mt-4 col my_secondary_size">
                 <h1 class="my_faq_title">Todo</h1>
                 <div class="my_frame_box p-2">
 
                   <ul class="list-group">
-                    <li class="list-group-item">Kickoff nuove classi</li>
-                    <li class="list-group-item">Lezione su Bootstrap 5 in classe #75</li>
-                    <li class="list-group-item">Controllare usarname github studenti</li>
+                    <li class="list-group-item">
+                      <input type="checkbox" class="checkbox">
+                      Kickoff nuove classi
+                    </li>
+                    <li class="list-group-item">
+                      <input type="checkbox" class="checkbox">
+                      Lezione su Bootstrap 5 in classe #75
+                    </li>
+                    <li class="list-group-item">
+                      <input type="checkbox" class="checkbox">
+                      Controllare usarname github studenti
+                    </li>
                   </ul>
 
                   </div>
@@ -276,7 +290,7 @@
 
         
               <!-- # FAQ section box -->
-              <div class="row">
+              <div class="row" id="FAQ_Section">
                 <section section class="m-4 col my_primary_size">
                 <h2 class="my_faq_title">F.A.Q.</h2>
                 <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
@@ -317,7 +331,7 @@
                   
               <!-- todo probabilmente da rifare -->
               <!-- # Grafico utenti attivi -->
-              <div class="row">
+              <div class="row" id="Grafico_Section">
                 <section class="mt-4 col my_secondary_size">
                     
                     <!-- + Card con foto e descrizione -->

@@ -233,6 +233,12 @@ html{
 
 
 
+.small_logo_nav{
+    display: none;
+}
+
+
+
 
 /* -h tabella ------------------------------------ */
 .table-title {
@@ -272,6 +278,8 @@ html{
 
   /* Media query per tablet (da 768px a 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
+    /* !inserire qui dentro le regole */
+    
     
 }
 
@@ -282,5 +290,105 @@ html{
 
 /* Media query per smartphone (fino a 767px) */
 @media (max-width: 767px) {
+
+
+
+    .my_main_page_layout{
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+    }
+
+
+
+    /* # Aside Section---------------------------------*/
+    .sidebar {
+        width: 4.8rem;
+    }
+
+    .my_navbarfont li p {
+        display: none;
+    }
+
+
+
+    .sidebar ul{
+        padding-top: 2rem;
+        
+    }
+
     
-}
+    .big_logo_nav{
+        display: none;
+    }
+
+
+    .small_logo_nav{
+        display: block;
+        width: 4rem;
+        padding: 0;
+    }
+
+    .hide_status{
+        display: none;
+    }
+    /* # Aside Section ------------------------------ */
+
+
+
+
+
+    /* + Jumbotron in blu */
+    #Jumbo_Section {
+        padding: 1.6rem;
+        padding-top: 3rem;
+      }
+      
+      .my_align_items {
+        margin-top: 20px; /* Esempio di margine superiore aggiunto */
+      }
+    
+      .my_button_plus {
+        font-size: 1.5rem; /* Esempio di dimensione del font per il pulsante aumentata */
+      }
+    }
+
+
+
+
+
+    #Tabella_PrimeClassi{
+        /* qui */
+    }
+
+
+
+
+
+
+    #Todo_Section{
+        /* qui */
+    }
+    
+
+
+
+
+    #FAQ_Section{
+        /* qui */
+    }
+
+
+
+
+
+    #Grafico_Section{
+        /* qui */
+    }
+
+
+
+
+
+
+
+
