@@ -40,7 +40,7 @@
               <img src="./img/mobile-logo.png" alt="Navbarlogomobile" class="my_nav_logo small_logo_nav">
 
               <form class="d-flex flex-grow-1 mx-3" role="search">
-                  <input class="form-control me-2 my_searchbar" type="search" placeholder="&#x1F50E; Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                  <input class="form-control me-2 my_searchbar flex-nowrap" type="search" placeholder="&#x1F50E; Prova a cercare: Lezioni di Laravel" aria-label="Search">
                   <i class="fas fa-list my_icon hide_status"></i> <!-- hamburger menù icon -->
                   <i class="fas fa-question-circle my_icon hide_status"></i> <!-- about icon -->
                   <i class="fas fa-ellipsis-v my_icon hide_status"></i> <!-- ellips vertical icon -->
@@ -62,9 +62,8 @@
         <section class="my_navbarfont priority_medium" id="Adide_Section">
             <!-- Sidebar -->
             <aside class="my_navbarfont priority_medium">
-              <div class="sidebar">
 
-
+              <div class="sidebar"> <!-- questo contenuto è in flex -->
                   <ul>
                       <li class="my_line my_gap_small">
                           <i class="fas fa-home"></i>
@@ -79,8 +78,6 @@
                           <p>Signals</p>
                       </li>
                   </ul>
-
-
               </div>
           </aside>
         </section>
@@ -126,6 +123,7 @@
                         </div>
                         <div class="col-2">
                             <button class="btn my_button_plus">+</button>
+                            <!--todo Qui inserire l'offcanvas di bootstrap -->
                         </div>
                     </div>
                     
@@ -142,16 +140,16 @@
 
               <!-- #tabella PRIME CLASSI --> 
               <div class="row" id="Tabella_PrimeClassi">
-                  <section class="col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
+                  <section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
                       <h2 class="table-title">Prossime Classi</h2>
                       <table class="table my_frame_box">
                           <thead>
                               <tr>
                                   <th scope="col">Nomi</th>
-                                  <th scope="col">Data di inizio</th>
-                                  <th scope="col">Stato</th>
-                                  <th scope="col">ROI</th>
-                                  <th scope="col" class="actions-column">Azioni</th>
+                                  <th scope="col" class="my_colum_table_space d-none d-md-table-cell">Data di inizio</th> <!-- dovrebbe scomparire quando in dimensione tablet -->
+                                  <th scope="col" class="my_colum_table_space">Stato</th>
+                                  <th scope="col" class="my_colum_table_space d-none d-md-table-cell">ROI</th> <!-- dovrebbe scomparire quando in dimensione tablet -->
+                                  <th scope="col" class="actions-column my_colum_table_space">Azioni</th>
                               </tr>
                           </thead>
                           <tbody class="my_border">
@@ -256,7 +254,7 @@
               
               <!-- # Todo Box -->
               <div class="row" id="Todo_Section">
-                <section class="col-md-6 col-lg-4 mb-4 m-2 my_secondary_size">
+                <section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_secondary_size">
                 <h1 class="my_faq_title">Todo</h1>
                 <div class="my_frame_box p-2">
 
@@ -291,7 +289,7 @@
         
               <!-- # FAQ section box -->
               <div class="row" id="FAQ_Section">
-                <section section class="col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
+                <section section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
                 <h2 class="my_faq_title">F.A.Q.</h2>
                 <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
                   <div class="accordion-item">
@@ -329,11 +327,10 @@
               </div>    
                                     
                   
-              <!-- todo probabilmente da rifare -->
+
               <!-- # Grafico utenti attivi -->
               <div class="row" id="Grafico_Section">
-
-                <section class="card" style="width: 18rem;">
+                <section class="card col-12" style="width: 18rem;"> <!-- TODO da rivedere come ridimenzionare questa sezione... -->
                   <img src="./img/stats.jpeg" class="card-img-top" alt="Grafico Utenti">
                   <div class="card-body">
                     <h5 class="card-title">Utenti attivi</h5>
@@ -348,7 +345,6 @@
                     <a href="#" class="card-link">Visualizza report approfondito</a>
                   </div>
                 </section>
-
               </div>
               
             </div> <!-- * disposizione elementi con flex -->

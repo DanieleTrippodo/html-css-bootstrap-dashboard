@@ -9,6 +9,10 @@ html{
 }
 
 
+.my_colum_table_space{
+    width: 7rem;
+}
+
 /* questa regola da applicare a tutti i tag che inseriamo */
 .my_tag {
     width: 8rem;
@@ -173,6 +177,7 @@ html{
     align-items: center;
     padding-top: 5rem; 
     background-image: url(../img/sidebar-bg.png);
+    justify-content: space-between;
 }
 .sidebar ul {
     list-style-type: none;
@@ -291,6 +296,12 @@ html{
 /* Media query per smartphone (fino a 767px) */
 @media (max-width: 767px) {
 
+    .my_flex{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
 
 
     .my_main_page_layout{
@@ -351,40 +362,6 @@ html{
         font-size: 1.5rem; /* Esempio di dimensione del font per il pulsante aumentata */
       }
     }
-
-
-
-
-
-    #Tabella_PrimeClassi{
-        /* qui */
-    }
-
-
-
-
-
-
-    #Todo_Section{
-        /* qui */
-    }
-    
-
-
-
-
-    #FAQ_Section{
-        /* qui */
-    }
-
-
-
-
-
-    #Grafico_Section{
-        /* qui */
-    }
-
 
 
 
