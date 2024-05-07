@@ -138,9 +138,10 @@
 
             <div class="my_flex"> <!-- * disposizione elementi con flex -->
 
-              <!-- #tabella PRIME CLASSI --> 
-              <div class="row" id="Tabella_PrimeClassi">
-                  <section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
+              <!-- + divisione in 2 elementi -->
+              <div class="row w-100" id="Tabella_PrimeClassi">
+                  <!-- #tabella PRIME CLASSI --> 
+                  <section class="col-12 col-lg-8">
                       <h2 class="table-title">Prossime Classi</h2>
                       <table class="table my_frame_box">
                           <thead>
@@ -248,35 +249,32 @@
                           </tbody>
                       </table>
                   </section>
+                  
+
+                  <!-- # Todo Box -->
+                  <section class="col-12 col-lg-4">
+                    <h1 class="my_faq_title">Todo</h1>
+                    <div class="my_frame_box p-2">
+    
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <input type="checkbox" class="checkbox">
+                          Kickoff nuove classi
+                        </li>
+                        <li class="list-group-item">
+                          <input type="checkbox" class="checkbox">
+                          Lezione su Bootstrap 5 in classe #75
+                        </li>
+                        <li class="list-group-item">
+                          <input type="checkbox" class="checkbox">
+                          Controllare usarname github studenti
+                        </li>
+                      </ul>
+    
+                      </div>
+                  </section>
+
               </div>
-
-              
-              
-              <!-- # Todo Box -->
-              <div class="row" id="Todo_Section">
-                <section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_secondary_size">
-                <h1 class="my_faq_title">Todo</h1>
-                <div class="my_frame_box p-2">
-
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <input type="checkbox" class="checkbox">
-                      Kickoff nuove classi
-                    </li>
-                    <li class="list-group-item">
-                      <input type="checkbox" class="checkbox">
-                      Lezione su Bootstrap 5 in classe #75
-                    </li>
-                    <li class="list-group-item">
-                      <input type="checkbox" class="checkbox">
-                      Controllare usarname github studenti
-                    </li>
-                  </ul>
-
-                  </div>
-                </section>
-              </div>
-              
             </div> <!-- * disposizione elementi con flex -->
 
 
@@ -285,52 +283,50 @@
 
 
             <div class="my_flex"> <!-- * disposizione elementi con flex -->
+              <div class="row w-100" id="Tabella_PrimeClassi">
 
-        
-              <!-- # FAQ section box -->
-              <div class="row" id="FAQ_Section">
+                <!-- # FAQ section box -->
                 <section section class="col-12 col-md-6 col-lg-4 mb-4 m-2 my_primary_size">
-                <h2 class="my_faq_title">F.A.Q.</h2>
-                <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Come aggiungere un nuovo studente?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Come posso accedere alle informazioni del mio account?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Posso usare questa Dashboard da mobile?
-                      </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="box">
+                    <h2 class="my_faq_title">F.A.Q.</h2>
+                    <div class="accordion accordion-flush my_frame_box" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                         </div>
                       </div>
-                    </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Posso usare questa Dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
                 </section>
-              </div>    
+  
                                     
-                  
-
-              <!-- # Grafico utenti attivi -->
-              <div class="row" id="Grafico_Section">
-                <section class="card col-12" style="width: 18rem;"> <!-- TODO da rivedere come ridimenzionare questa sezione... -->
+                <!-- # Grafico utenti attivi -->
+                  <section class="card col-12" style="width: 18rem;"> <!-- TODO da rivedere come ridimenzionare questa sezione... -->
                   <img src="./img/stats.jpeg" class="card-img-top" alt="Grafico Utenti">
                   <div class="card-body">
                     <h5 class="card-title">Utenti attivi</h5>
@@ -344,9 +340,10 @@
                   <div class="card-body">
                     <a href="#" class="card-link">Visualizza report approfondito</a>
                   </div>
-                </section>
+                  </section>
+
+                </div>
               </div>
-              
             </div> <!-- * disposizione elementi con flex -->
             
             
